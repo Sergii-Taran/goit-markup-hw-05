@@ -617,21 +617,23 @@ img {
 
 .modal {
   position: absolute;
+
   top: 50%;
   left: 50%;
-  padding: 72px 24px 24px 24px;
+  transform: translate(-50%, -50%);
 
   width: 408px;
   min-height: 584px;
-  border-radius: 4px;
 
-  transform: translate(-50%, -50%);
-
+  background-color: #fcfcfc;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
+
+  border-radius: 4px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 72px 24px 24px 24px;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -680,48 +682,24 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  /* margin-top: 48px; */
   margin-bottom: 16px;
 }
 
 .form {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 8px; */
   /* padding: 8px; */
-  max-width: 360px;
+  /* max-width: 360px; */
 }
 
 .modal-field {
-  /* margin-bottom: 8px; */
-}
-
-.form-input {
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  width: 100%;
-  height: 40px;
-
-  background-color: transparent;
-
-  padding-left: 38px;
-  padding-right: 16px;
-  outline: transparent;
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-input:focus {
-  border-color: #4d5ae5;
-}
-
-.form-input:focus + .icon-modal {
-  fill: #4d5ae5;
+  margin-bottom: 8px;
 }
 
 .form-label {
   display: block;
-  flex-direction: column;
+  /* flex-direction: column; */
 
   margin-bottom: 4px;
 
@@ -735,6 +713,29 @@ img {
   position: relative;
 }
 
+.form-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+
+  background-color: transparent;
+
+  padding-left: 38px;
+  /* padding-right: 16px; */
+  outline: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+  border-color: #4d5ae5;
+}
+
+.form-input:focus + .icon-modal {
+  fill: #4d5ae5;
+}
+
 .icon-modal {
   fill: #2e2f42;
   position: absolute;
@@ -746,7 +747,7 @@ img {
 }
 
 .comment-field {
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 }
 
 .modal-comment {
@@ -793,7 +794,7 @@ img {
   color: #8e8f99;
   /* display: flex; */
   align-items: center;
-  gap: 8px;
+  /* gap: 8px; */
   /* margin-bottom: 24px; */
 }
 
@@ -802,6 +803,7 @@ img {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  margin-right: 8px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
