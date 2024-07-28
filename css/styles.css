@@ -619,7 +619,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* padding: 24px; */
   padding: 72px 24px 24px 24px;
 
   width: 408px;
@@ -681,7 +680,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 48px;
+  /* margin-top: 48px; */
   margin-bottom: 16px;
 }
 
@@ -689,12 +688,12 @@ img {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 8px;
+  /* padding: 8px; */
   max-width: 360px;
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .form-input {
@@ -747,7 +746,7 @@ img {
 }
 
 .comment-field {
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .modal-comment {
@@ -766,7 +765,7 @@ img {
 
   padding: 8px 16px;
 
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   outline: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -795,7 +794,7 @@ img {
   /* display: flex; */
   align-items: center;
   gap: 8px;
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 }
 
 .modal-check-text span {
