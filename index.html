@@ -485,8 +485,21 @@
         <div class="container-subscribe">
           <p class="media-text">Subscribe</p>
           <form class="form-footer" name="subscribe-form" autocomplete="off">
-            <label class="footer-label" for="subscribe-email"></label>
-            <input
+            <label class="footer-label">
+              <input
+                class="input-footer"
+                name="subscribe-email"
+                type="email"
+                placeholder="E-mail"
+              />
+              <button class="subscribe-btn" type="submit">
+                Subscribe
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+            <!-- <input
               class="input-footer"
               type="email"
               name="subscribe-email"
@@ -498,7 +511,7 @@
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
-            </button>
+            </button> -->
           </form>
         </div>
       </div>
@@ -521,7 +534,7 @@
               <input
                 class="form-input"
                 type="text"
-                name="use-rname"
+                name="user-name"
                 required
                 id="user-name"
               />
@@ -572,6 +585,13 @@
               value="true"
             />
             <label class="modal-check-text" for="user-privacy"
+              ><span class="modal-check-span"
+                ><svg class="icon-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="modal-link" href="">Privacy Policy</a></label
+            >
+            <!-- <label class="modal-check-text" for="user-privacy"
               ><span>
                 <svg class="icon-check" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
@@ -580,7 +600,7 @@
               <a class="modal-link" href="./index.html"
                 >Privacy Policy</a
               ></label
-            >
+            > -->
           </div>
           <button class="form-btn" type="submit">Send</button>
         </form>
