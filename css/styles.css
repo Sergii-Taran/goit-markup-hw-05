@@ -525,13 +525,11 @@ img {
 }
 
 .form-footer {
-  /* display: flex;
-  gap: 24px; */
+  display: flex;
+  gap: 24px;
 }
 
 .footer-label {
-  display: flex;
-  gap: 24px;
 }
 
 .input-footer {
